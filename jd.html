@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>klawiatura</title>
+</head>
+
+<body>
+    <script>
+        function literki(charA, charZ) {
+            var abc = [], x = charA.charCodeAt(0), y = charZ.charCodeAt(0);
+            for (; x <= y; ++x) {
+                abc.push(String.fromCharCode(x));
+            }
+            return abc;
+        }
+        let a = literki('A', 'Z');
+
+        for (let k = 0; k < a.length; k++){
+        let f = document.createElement('button');
+        f.innerHTML = a[k];
+        f.addEventListener('click', jd())
+        document.body.appendChild(f)
+        }
+        function jd(){}
+        
+    </script>
+</body>
+
+</html>
